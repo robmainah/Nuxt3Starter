@@ -1,15 +1,13 @@
 <script lang="ts" setup>
 const city = ref<string>("");
 const cityError = ref<boolean>(false);
-// const router = useRouter();
 
 const handleSearch = () => {
   if (!city.value) {
     return cityError.value = true;
   }
 
-  navigateTo(`/city/${city.value}/car`)
-  // router.push(`/city/${city.value}/car`)
+  navigateTo(`/city/${city.value}/car`);
 }
 </script>
 <template>

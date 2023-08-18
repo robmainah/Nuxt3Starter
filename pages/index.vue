@@ -5,9 +5,7 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+  title: 'Car Trader',
+})
 </script>
-
-<style scoped>
-
-</style>
